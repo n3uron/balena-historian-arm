@@ -4,13 +4,12 @@ services:
   n3uron:
     build: .
     ports:
+      - 80:8003   # HTTP WebUI for remote access via balena public URL
       - 8003:8003 # HTTP WebUI
       - 8443:8443 # HTTPS WebUI
       - 8004:8004 # HTTP WebVision
       - 8444:8444 # HTTPS WebVision
       - 3001:3001 # Inbound Links
-    environment:
-      - HOSTNAME=balena-historian
     volumes:
       - n3_config:/opt/n3uron/config
       - n3_data:/opt/n3uron/data
@@ -18,6 +17,7 @@ services:
       - n3_log:/opt/n3uron/log
     cap_add:
       - SYS_ADMIN
+      - SYS_RAWIO
     restart: always
 
   mongo:
