@@ -1,5 +1,6 @@
-name: N3uron Historian ARM
+name: N3uron Historian for ARM
 type: sw.application
+version: 1.21.6
 
 description: >-
   Historian is an affordable and easy-to-deploy solution for businesses that need to manage large volumes of time-series data.
@@ -30,4 +31,3 @@ data:
     - raspberrypi3-64
     - raspberrypi4-64
     - raspberrypi400-64
-version: 1.21.5
