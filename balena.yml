@@ -31,3 +31,5 @@ data:
     - raspberrypi3-64
     - raspberrypi4-64
     - raspberrypi400-64
+    - raspberrypicm4-ioboard
+    - raspberrypi5
