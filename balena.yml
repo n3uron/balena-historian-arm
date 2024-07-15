@@ -1,6 +1,6 @@
 name: N3uron Historian for ARM
 type: sw.application
-version: 1.21.7
+version: 1.21.10
 
 description: >-
   Historian is an affordable and easy-to-deploy solution for businesses that need to manage large volumes of time-series data.
